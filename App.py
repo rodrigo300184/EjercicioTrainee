@@ -36,7 +36,7 @@ def agregar_vehiculo():
             if len(patente)==6:
                 if patente[0:3].isalpha(): 
                     if patente[3:6].isdigit():
-                        patente.isupper()
+                        patente = patente.upper()
                         verificador_patente = True
                     else:
                         flash('La patente no posee un formato correcto del tipo AAA000 ó AA000BB')
@@ -46,7 +46,7 @@ def agregar_vehiculo():
                 if patente[0:2].isalpha():
                     if patente[3:5].isdigit():
                         if patente[6:7].isalpha():
-                            patente.isupper()
+                            patente = patente.upper()
                             verificador_patente = True
                         else:
                             flash('La patente no posee un formato correcto del tipo AAA000 ó AA000BB')
@@ -89,7 +89,7 @@ def actualizar_vehiculo(id):
             if len(patente)==6:
                 if patente[0:3].isalpha(): 
                     if patente[3:6].isdigit():
-                        patente.isupper()
+                        patente = patente.upper()
                         verificador_patente = True
                     else:
                         flash('La patente no posee un formato correcto del tipo AAA000 ó AA000BB')
@@ -99,7 +99,7 @@ def actualizar_vehiculo(id):
                 if patente[0:2].isalpha():
                     if patente[3:5].isdigit():
                         if patente[6:7].isalpha():
-                            patente.isupper()
+                            patente = patente.upper()
                             verificador_patente = True
                         else:
                             flash('La patente no posee un formato correcto del tipo AAA000 ó AA000BB')
